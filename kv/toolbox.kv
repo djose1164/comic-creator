@@ -1,0 +1,19 @@
+#:kivy 1.11.1
+
+<ToolButton@ToggleButton>:
+    size_hint: None, None
+    size: 48, 48
+    group: "tool"
+
+<ToolBox@GridLayout>:
+    cols: 2
+    padding: 2
+
+    ToolButton:
+        text: "0"
+
+    ToolButton:
+        text: "/"
+
+    ToolButton:
+        text: "?"
