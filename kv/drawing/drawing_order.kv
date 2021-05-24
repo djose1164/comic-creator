@@ -1,0 +1,27 @@
+#:kivy 1.11.1
+
+<DrawingSpace>:
+    canvas.before:
+        Color:
+            rgba: 1, 0, 0, 1
+        Rectangle:
+            pos: 0, 0
+            size: 100, 100
+        
+    canvas:
+        Color:
+            rgba: 0, 1, 0, 1
+        Rectangle:
+            pos: 100, 0
+            size: 100, 100
+
+    canvas.after:
+        Color:
+            rgba: 0, 0, 1, 1
+        Rectangle:
+            pos: 200, 0
+    
+    Button:
+        text: "Hola como estas? Como te ha ido?"
+        pos_hint: {"center": (.5, .5)}
+        size_hint: .9, 
