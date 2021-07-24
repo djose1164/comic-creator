@@ -1,6 +1,12 @@
 #:kivy 1.11.1
 
+"""comiccreator.kv module
+Here is the main implemation.
+"""
+
+# Root
 <ComicCreator>:
+    # AnchorLayout for toolbox.
     AnchorLayout:
         anchor_x: "left"
         anchor_y: "top"
@@ -10,6 +16,7 @@
             size_hint: None, None
             width: 100
 
+    # AnchorLayout for the space that will be use or avaible for drawing.
     AnchorLayout:
         anchor_x: "right"
         anchor_y: "top"
@@ -19,6 +26,7 @@
             width: root.width - _tool_box.width
             height: root.height - _general_options.height - _status_bar.height
 
+    # For the bottom panel.
     AnchorLayout:
         anchor_x: "center"
         anchor_y: "bottom"
