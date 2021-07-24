@@ -1,0 +1,38 @@
+#kivy 1.11.1
+
+<DrawingSpace>:
+    pos_hint: {'x': .5, 'y': .5}
+    size_hint: 1, 1
+    canvas:
+        # First img.
+        # Without changes.
+        Rectangle:
+            source: "../img/kivy.png"
+        
+        # First img.
+        Rotate:
+            angle: -90
+            axis: 0, 0, 1
+        Color:
+            rgb: 1,0,0
+        Rectangle:
+            source: "../img/kivy.png"
+
+        # Third img.
+        Translate:
+            x: -100
+            y: -100
+        Color:
+            rgb: 0,1,0
+        Rectangle:
+            source: "../img/kivy.png"
+
+        Translate:  
+            y: 60  # x = -y
+            x: 90  # y = -x
+        Scale:
+            xyz: .5, .5, 0
+        Color:
+            rgb: 0,0,1
+        Rectangle:
+            source: "../img/kivy.png"
