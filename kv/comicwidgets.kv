@@ -1,0 +1,38 @@
+#:kivy 1.11.1
+#:import comicwidgets comicwidgets
+
+<DraggableWidget>:
+    size_hint: None, None
+
+<StickMan@RelativeLayout>:
+    size: 48, 48
+    canvas:
+        PushMatrix
+        Color:
+            rgb: 1,0,0
+        # Draw all the body less the arms.
+        Line:
+            circle: 24, 38, 5    # Head
+        Line:
+            points: 24,33, 24,15 # Body
+        Line:
+            points: 14,5, 24,15 # Left leg
+        Line:
+            points: 34,5, 24,15 # Right leg
+        # Draw the arms.
+        Translate:
+            y: 40
+        Rotate:
+            angle: 180
+            axis: 1,0,0
+        Line:
+            points: 14,5, 24,15 # Left arm
+        Line:
+            points: 34,5, 24,15 # Right arm
+        # Bring back the previous context.
+        PopMatrix
+ 
+        
+        
+        
+        
