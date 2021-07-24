@@ -4,10 +4,10 @@ from kivy.uix.relativelayout import RelativeLayout
 from kivy.lang import Builder
 from kivy.core.window import Window
 
-# Builder.load_file("./kv/drawing/drawing.kv")
-# Builder.load_file("./kv/drawing/drawing_line.kv")
-# Builder.load_file("./kv/drawing/drawing_img.kv")
-Builder.load_file("./kv/drawing/drawing_order.kv")
+Builder.load_file("drawing/drawing.kv")
+# Builder.load_file("drawing/drawing_line.kv")
+# Builder.load_file("drawing/drawing_img.kv")
+# Builder.load_file("./kv/drawing/drawing_order.kv")
 require("1.11.1")
 
 
