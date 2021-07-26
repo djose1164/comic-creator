@@ -1,7 +1,6 @@
 from kivy.uix.relativelayout import RelativeLayout
 from kivy.graphics import Line
 
-
 class DraggableWidget(RelativeLayout):
     def __init__(self, **kw):
         super().__init__(**kw)

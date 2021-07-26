@@ -1,6 +1,7 @@
 #:kivy 1.11.1
+#:import toolbox toolbox
 
-<ToolButton@ToggleButton>:
+<ToolButton>:
     size_hint: None, None
     size: 48, 48
     group: "tool"
@@ -27,6 +28,6 @@
             Line:
                 points: 10,10, 38,38
 
-    ToolButton:
+    ToolStickMan:
         StickMan:
             pos_hint: {"center_x":.5, "center_y":.5}

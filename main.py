@@ -2,7 +2,6 @@ from kivy import require
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.anchorlayout import AnchorLayout
-
 from os import listdir
 
 kv_path: str = "./kv/"
